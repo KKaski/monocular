@@ -20,16 +20,16 @@ api:
       cpu: 100m
       memory: 128Mi
   livenessProbe:
-    initialDelaySeconds: 180
+    initialDelaySeconds: 640
   config:
     repos:
       # Official repositories
       - name: stable
         url: https://kubernetes-charts.storage.googleapis.com
         source: https://github.com/kubernetes/charts/tree/master/stable
-      - name: incubator
-        url: https://kubernetes-charts-incubator.storage.googleapis.com
-        source: https://github.com/kubernetes/charts/tree/master/incubator
+      #- name: incubator
+      #  url: https://kubernetes-charts-incubator.storage.googleapis.com
+      #  source: https://github.com/kubernetes/charts/tree/master/incubator
       # Add your own repository
       #- name: my-repo-name
       #  url: my-repository-url
